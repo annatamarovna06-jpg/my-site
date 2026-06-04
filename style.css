@@ -1,0 +1,166 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:#eaeaea;
+font-size:16px;
+line-height:1.6;
+}
+
+/* HEADER */
+header{
+background:#0f0f0f;
+padding:18px 0;
+border-bottom:1px solid #222;
+}
+
+nav{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:#c8a24a;
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+.menu a{
+color:#eaeaea;
+text-decoration:none;
+margin-left:15px;
+font-size:15px;
+}
+
+.menu a:hover{
+color:#c8a24a;
+}
+
+/* SECTIONS */
+.section{
+width:90%;
+margin:50px auto;
+}
+
+.section h2{
+text-align:center;
+font-size:28px;
+color:#c8a24a;
+margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* CARD */
+.card{
+flex:1;
+min-width:240px;
+background:#121212;
+border:1px solid #222;
+border-radius:12px;
+overflow:hidden;
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+border-color:#333;
+}
+
+.card-content{
+padding:18px;
+}
+
+.card h3{
+font-size:20px;
+margin-bottom:8px;
+}
+
+.price{
+color:#c8a24a;
+margin-top:10px;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+position:relative;
+width:90%;
+margin:30px auto;
+height:320px;
+border-radius:12px;
+overflow:hidden;
+border:1px solid #222;
+}
+
+.hero-image{
+position:absolute;
+inset:0;
+background-image:url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85");
+background-size:cover;
+background-position:center;
+filter:brightness(0.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+top:50%;
+transform:translateY(-50%);
+color:#fff;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+bottom:-1px;
+left:0;
+border-right:100vw solid transparent;
+border-top:60px solid #0b0b0b;
+}
+
+/* FORM */
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+background:#0b0b0b;
+border:1px solid #222;
+color:#fff;
+border-radius:8px;
+}
+
+button{
+width:100%;
+padding:11px;
+background:#c8a24a;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:22px;
+margin-top:40px;
+border-top:1px solid #222;
+color:#777;
+font-size:14px;
+}
